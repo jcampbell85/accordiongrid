@@ -1,0 +1,126 @@
+a{
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease;
+}
+.arrow{
+  position:relative;
+  font-size:24px;
+  text-transform:uppercase;
+  color:#f18f23;
+  font-weight:700;
+  display:inline-block;
+}
+.arrow:hover,
+.arrow:focus{
+  color:#f18f23;
+  text-decoration:none;
+}
+
+@keyframes point-right{
+  0%{
+    right:-45px;
+  }
+  50%{
+    right:-55px;
+  }
+  100%{
+    right:-45px;
+  }
+}
+@keyframes caption-point-right{
+  0%{
+    right:0px;
+  }
+  50%{
+    right:10px;
+  }
+  100%{
+    right:0px;
+  }
+}
+
+.arrow.right-arrow{
+  margin-right:45px;
+}
+.arrow.right-arrow:after{
+  content:'';
+  position:absolute;
+  height:19px;
+  width:38px;
+  background-image:url(images/sprites.png);
+  background-position:0px -70px;
+  right:-45px;
+  top:7px;
+}
+.arrow.right-arrow:hover:after{
+  animation-name:point-right;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  animation-timing-function:ease;
+}
+
+.brands{
+  margin-top:40px;
+  position:relative;
+  /*height:580px;*/
+  margin-left:auto;
+  margin-right:auto;
+}
+.brand{
+  height:290px;
+  cursor:pointer;
+  background-repeat:no-repeat;
+  background-size:cover;
+  display:inline-block;
+  width:290px;
+  position:absolute;
+}
+
+.brand img{
+  max-width:100%;
+}
+.brand .caption-wrapper{
+  position:absolute;
+  bottom:0;
+  background-color:rgba(0,0,0,.6);
+  width:100%;
+  height:95px;
+  display:table;
+  padding:15px;
+}
+.brand .caption{
+  display:table-cell;
+  color:#fff;
+  vertical-align:bottom;
+}
+.brand .caption:hover,
+.brand .caption:focus{
+  text-decoration:none;
+}
+.brand .caption>h3{
+  font-size:14px;
+  text-transform:uppercase;
+  margin-top:0;
+  margin-bottom:0;
+}
+.brand .caption>p{
+  margin-bottom:0;
+  font-size:14px;
+  font-weight:normal;
+  text-transform:none;
+}
+.brand.big-caption{
+  white-space:nowrap;
+  overflow:hidden;
+}
+.caption.arrow.right-arrow:after{
+  right:0px;
+  top:auto;
+  bottom:10px;
+}
+.caption.arrow.right-arrow:hover:after{
+  animation-name:caption-point-right;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  animation-timing-function:ease;
+}
