@@ -48,7 +48,7 @@ a{
   height:19px;
   width:38px;
   background-image:url(images/sprites.png);
-  background-position:0px -70px;
+  background-position:0px -8px;
   right:-45px;
   top:7px;
 }
@@ -59,7 +59,7 @@ a{
   animation-timing-function:ease;
 }
 
-.brands{
+.acc-grid{
   margin-top:40px;
   position:relative;
   /*height:580px;*/

@@ -191,7 +191,7 @@ var loader = (function(window, $loadingScreen){
 
 jQuery(document).ready(function($){
 
-  $('.brands').accordionGrid();
+  $('.acc-grid').accordionGrid();
 
   $('a.arrow').on('click', function(e){
     var self = $(this);
